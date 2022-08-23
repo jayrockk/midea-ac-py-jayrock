@@ -307,7 +307,8 @@ class unknown_device(device):
             'eco_mode': response.eco_mode,
             'turbo_mode': response.turbo_mode
         }))
-
+        self.update(response)
+        
     def apply(self):
         print("Cannot apply, device not fully supported yet")
 
